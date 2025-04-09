@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './pages/Home';
+import ProductForm from './ProductForm';
 
-function App() {
+const App = () => {
+  const fetchProducts = () => {
+    console.log('Fetching products...');
+    // Add logic to fetch products here
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home />
+      <ProductForm onProductAdded={fetchProducts} />
+    </>
   );
-}
+};
 
 export default App;
+// This file is the main entry point of the React application. It imports the Home component and renders it.

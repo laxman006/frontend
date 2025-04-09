@@ -27,3 +27,4 @@ const Home = () => {
 
 export default Home;
 // This file is a React component that fetches and displays a list of products from an API.
+// It serves as the homepage for an e-commerce site, showcasing products in a grid layout.
